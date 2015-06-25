@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :sales
 
+  root 'products#index'
   resources :products
 
   devise_for :users
