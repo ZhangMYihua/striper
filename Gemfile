@@ -6,6 +6,7 @@ gem 'favorite_things'
 gem 'rails', '4.2.0'
 gem 'paperclip', '~> 4.2.1'
 gem 'rails_12factor', group: :production
+gem 'aws-sdk', '< 2.0'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
