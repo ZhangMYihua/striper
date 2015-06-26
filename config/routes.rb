@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   get '/download/:guid', to: 'transactions#download', as: :download
 
+
+  root 'products#index'
   resources :sales
 
   resources :products
