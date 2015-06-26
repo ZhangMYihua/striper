@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
-  get 'transactions/new'
+  get '/buy/:permalink', to: 'transactions#new', as: :show_buy
 
-  get 'transactions/pickup'
+  get '/buy/:permalink', to: 'transactions#create', as: :buy
 
-  get 'transactions/create'
+  get '/pickup/:guid', to: 'transactions#pickup', as: :pickup
+
+  get '/download/:guid', to: 'transactions#download', as: :download
 
   resources :sales
 
