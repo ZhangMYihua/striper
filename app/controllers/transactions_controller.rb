@@ -28,7 +28,7 @@ class TransactionsController < ApplicationController
         )
        redirect_to pickup_url(guid: @sale.guid) #This line redirects to the url where the user picks up their purchase      
     
-    rescue: Stripe::CardError => e 
+    rescue Stripe::CardError => e 
       # if stripe gets an error, the rescue method stores the error in a variable and redirects to :new route
       @error = e 
       render :new
