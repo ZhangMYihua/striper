@@ -24,7 +24,7 @@ class TransactionsController < ApplicationController
         )
       @sale = product.sales.create!(
         email: params[:stripeEmail],
-        stripe_id: charge_id
+        stripe_id: charge.id
         )
        redirect_to pickup_url(guid: @sale.guid) #This line redirects to the url where the user picks up their purchase      
     
