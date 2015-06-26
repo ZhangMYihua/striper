@@ -41,7 +41,7 @@ class TransactionsController < ApplicationController
     resp = HTTParty.get(@sale.product.file.url)
 
     filename = @sale.product.file.url
-    send_data resp.body, :filename => File.basename(filename), :content_type => resp.headers['Content-Type']
+    send_data resp.body, :filename => File.basename(filename), :content_type => '.jpg'
   end
 
 end
