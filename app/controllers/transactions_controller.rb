@@ -35,4 +35,10 @@ class TransactionsController < ApplicationController
     end
   end
 
+  def download
+    @sale = Sale.find_by!(guid: params[:guid])
+
+    filename = @sale.product.file.url
+  end
+
 end
