@@ -1,0 +1,12 @@
+.well {
+  margin-left: 0px;
+  position: relative;
+  min-width: 650px;
+  min-height: 180px;
+  max-height: 180px;
+}
+
+#custom {
+  position: absolute;
+  left: 20px;
+}
