@@ -13,9 +13,11 @@
     </div>
   </div>
   <div class='row custom-body'>
-  <div id='cvc-heading'></div>
-
-    
+    <div id='cvc-heading'>
+      <label class='control-label' for="cvc">CVC</label>
+      <input type="text" style="width: 3em" size="3" data-stripe='cvc' placeholder='***' pattern='[\d ]*'>
+      <img id='card-image' src='/img/credit.png'>
+    </div>
   </div>
   <% end %>
 </div>
