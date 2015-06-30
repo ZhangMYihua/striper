@@ -18,6 +18,18 @@
       <input type="text" style="width: 3em" size="3" data-stripe='cvc' placeholder='***' pattern='[\d ]*'>
       <img id='card-image' src='images/credit.png'>
     </div>
+    <div style='position: absolute; left:150px'>
+      <label class='control-label'>Exp (MM/YYYY)</label>
+      <input style='width: 2em' type="text" size='2' id='exp-month' data-stripe='exp-month' placeholder='MM' pattern='[\d ]*'>
+      <span> / </span>
+      <input style='width: 3em' type="text" size="4" id="exp-year" data-stripe="exp-year" placeholder='YYYY' pattern='[\d ]*'>
+    </div>
+  </div>
+  <div class="row" style="margin-top:70px">
+    <div class='price' style="position: absolute; left: 20px"><%= price%></div>
+    <div style="position: absolute; left: 400px">
+      <button type="submit" class="btn btn-primary btn-large">Buy Now</button>
+    </div>
   </div>
   <% end %>
 </div>
