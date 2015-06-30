@@ -6,7 +6,28 @@
   max-height: 180px;
 }
 
-#custom {
+#heading {
   position: absolute;
   left: 20px;
+}
+
+#number-heading {
+  position: absolute;
+  left: 400px;
+}
+
+#number {
+width: 18em;
+}
+
+#cvc-heading {
+  
+}
+
+.custom-body {
+margin-top: 65px;
+}
+
+#id {
+  width: 25em;
 }
