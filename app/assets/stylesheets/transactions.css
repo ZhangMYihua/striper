@@ -1,0 +1,40 @@
+.well {
+  margin-left: 0px;
+  position: relative;
+  min-width: 650px;
+  min-height: 180px;
+  max-height: 180px;
+}
+
+#heading {
+  position: absolute;
+  left: 20px;
+}
+
+#number-heading {
+  position: absolute;
+  left: 400px;
+}
+
+#number {
+  width: 18em;
+}
+
+#cvc-heading {
+  position: absolute;
+  left: 20px; 
+}
+
+#card-image{
+  height: 30px;
+  padding-left: 10px;
+  margin-top: -10px;
+}
+
+.custom-body {
+  margin-top: 65px;
+}
+
+#id {
+  width: 25em;
+}
